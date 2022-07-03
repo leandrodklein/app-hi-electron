@@ -9,3 +9,8 @@
 
 ### Instalar o Live Reload
 - npm install electron-reload
+
+
+![APP Expense Tracker](https://github.com/leandrodklein/app-hi-electron/blob/master/build/project_img.jpg)
+
+
