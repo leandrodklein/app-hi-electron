@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Hello LDK Studios Art</title>
+
+      <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+      <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+      <!--Importar o arquivo styles.css para estilizar a janela -->
+      <link rel="stylesheet" href="styles.css">
+      </style>
+   </head>
+   <body>     
+      <div class="intro">
+
+         <h1>Hi Electron!</h1>
+         <p>
+            We are using node <script>document.write(process.versions.node)</script>,
+            Chrome <script>document.write(process.versions.chrome)</script>,
+            and Electron <script>document.write(process.versions.electron)</script>.
+         </p>
+      
+         <h3>Meu primeiro app feito em Electron, usando só HTML, CSS e JS</h3>
+     
+      </div>
+
+      <div class="card__todo">
+         <h2>O que vou fazer hoje?</h2>
+         <input type="text" onkeyup="addNewTodo(event)"  id="inputTodo" placeholder="Escreva sua atividade...">
+         <span onclick="addNewTodo()" class="btn__add">Adicionar</span>
+      </div>
+     
+      <ul id="ulTodo">
+         <li class="checked">Estudar HTML e CSS</li>
+         <li>Estudar JavaScript</li>
+         <li class="checked">Estudar React</li>
+         <li>Estudar framework Next.js</li>
+      </ul>
+
+      <script src="todos.js" type="text/javascript"></script>       
+      
+   </body>
+</html>
